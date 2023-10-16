@@ -4,17 +4,17 @@ plugins {
 }
 
 android {
-    namespace = "com.chani.verticalgridsample"
-    compileSdk = 34
+    namespace = Config.nameSpace
+    compileSdk = Config.compileSdk
 
     defaultConfig {
-        applicationId = "com.chani.verticalgridsample"
-        minSdk = 21
-        targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        applicationId = Config.nameSpace
+        minSdk = Config.minSdk
+        targetSdk = Config.targetSdk
+        versionCode = Config.versionCode
+        versionName = Config.versionName
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner = Config.testInstrumentationRunner
         vectorDrawables {
             useSupportLibrary = true
         }
@@ -34,13 +34,13 @@ android {
         targetCompatibility = JavaVersion.VERSION_1_8
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = Config.jvmTarget
     }
     buildFeatures {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.3"
+        kotlinCompilerExtensionVersion = Config.kotlinCompilerExtensionVersion
     }
     packaging {
         resources {
@@ -50,8 +50,7 @@ android {
 }
 
 dependencies {
-
-    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
     implementation("androidx.activity:activity-compose:1.8.0")
     implementation(platform("androidx.compose:compose-bom:2023.03.00"))

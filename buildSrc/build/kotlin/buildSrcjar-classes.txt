@@ -1,0 +1,1 @@
+/Users/chani/AndroidStudioProjects/verticalGridSample/buildSrc/build/classes/kotlin/main/Config.class
