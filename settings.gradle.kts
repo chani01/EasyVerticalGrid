@@ -15,4 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "verticalGridSample"
 include(":app")
-include(":verticalGrid")
+include(":verticalgrid")
